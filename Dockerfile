@@ -1,6 +1,6 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install git libjansson-dev libcurl4-openssl-dev
+RUN apt-get -y install git libjansson-dev libcurl4-openssl-dev
 cat /proc/cpuinfo
 git clone https://github.com/uncle-bob/quarkcoin-cpuminer.git
 cd quarkcoin-cpuminer
